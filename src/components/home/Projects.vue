@@ -1,7 +1,10 @@
 <template>
-
-    <div class="projects-list"></div>
-  
+<div>
+    <div v-for="project in projects" :key="project.id" class="projects-list">
+        <h2> {{project.title}}</h2>
+        <p> {{project.details}} </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -10,23 +13,23 @@ export default {
 name: "Projects",
 data: function(){
     return {
-        project: [
+        projects: [
             {
                 id: "1",
-                title: "",
-                details: "",
+                title: "Project One",
+                details: "sdhjgbdvj",
                 image: ""
             },
             {
                 id: "2",
-                title: "",
-                details: "",
+                title: "Project Two",
+                details: "wgwijgnwkjg",
                 image: ""
             },
             {
                 id: "3",
-                title: "",
-                details: "",
+                title: "Project Three",
+                details: "wrgihnwjrfbns",
                 image: ""
             },
         ]
@@ -38,6 +41,6 @@ data: function(){
 
 </script>
 
-<style>
+<style scoped>
 
 </style>
