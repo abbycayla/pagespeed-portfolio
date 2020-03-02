@@ -1,6 +1,6 @@
 <template>
   <div> 
-      <h1> Home </h1>
+      <h1> Projects </h1>
       <Projects/>
   </div>
 </template>
@@ -17,5 +17,9 @@ export default {
 </script>
 
 <style>
+
+h1 {
+    text-align: center;
+}
 
 </style>
