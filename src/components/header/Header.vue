@@ -24,10 +24,11 @@ export default {
   ul {
       display: flex;
       justify-content: space-between;
+      padding: 0px 20px;
   }
 
   li {
-      padding: 22px 50px;
+      padding: 22px 0px;
       list-style-type: none;
       font-size: 1.2em;
   }

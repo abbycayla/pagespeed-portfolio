@@ -5,6 +5,7 @@
     <div class="placeholder-img"></div>
         <h2> {{project.title}}</h2>
         <p> {{project.details}} </p>
+        <button> View More </button>
     </div>
   </div>
   </div>
@@ -66,15 +67,18 @@ data: function(){
     
 }
 
-.project-item h2{
-
-}
-
 .placeholder-img {
     width: 100%;
     height: 400px;
     background-color: lightgrey;
 }
+
+button {
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    outline: none;
+    }
 
 
 </style>
