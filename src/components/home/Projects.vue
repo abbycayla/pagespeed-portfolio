@@ -70,6 +70,7 @@ data: function(){
 
 .project-item h2{
     padding: 30px 0px;
+    font-weight: lighter;
 
 }
 

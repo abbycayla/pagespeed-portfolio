@@ -50,11 +50,11 @@ name: "Details"
 
 .details-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .details-content div {
-    margin: 5% 0%;
+    margin: 5% 7%;
     width: 500px;
     text-align: center;
 }
@@ -77,6 +77,10 @@ a {
 
 .contact-links {
     display: flex;
+}
+
+p {
+    width: 100%;
 }
 
 .details-con {
