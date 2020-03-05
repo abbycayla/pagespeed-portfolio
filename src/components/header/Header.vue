@@ -2,7 +2,7 @@
   <nav>
     <ul>
       <li><router-link v-bind:to="'/'"> back </router-link></li>
-        <li> Admin Log in </li>
+        <li><router-link v-bind:to="'/login'"> Admin Log In </router-link> </li>
     </ul>
   </nav>
 </template>
