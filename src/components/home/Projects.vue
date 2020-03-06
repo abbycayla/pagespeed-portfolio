@@ -63,7 +63,8 @@ data: function(){
 
 .project-item {
     margin: 5% 5%;
-    width: 500px;
+    width: 450px;
+    height: 400px;
     text-align: center;
     
 }
@@ -75,7 +76,7 @@ data: function(){
 
 .placeholder-img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     background-color: lightgrey;
 }
 
