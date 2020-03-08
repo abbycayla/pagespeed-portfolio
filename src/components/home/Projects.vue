@@ -21,25 +21,25 @@ data: function(){
             {
                 id: "1",
                 title: "Project One",
-                details: "sdhjgbdvjdrt h rthtrhrthdhethd",
+                details: "This project ____ was apart of a Level 6 Web and UX formative at Yoobee Colleges in 2019. Click view more to see more about this site",
                 image: ""
             },
             {
                 id: "2",
                 title: "Project Two",
-                details: "wgwijgnwkjgdhehn erb tehrhsh",
+                details: "This project ____ was apart of a Level 6 Web and UX formative at Yoobee Colleges in 2019. Click view more to see more about this site",
                 image: ""
             },
             {
                 id: "3",
                 title: "Project Three",
-                details: "wrgihnwjrfbnsdtrhrb tebe erb fgdbrgwrhwr",
+                details: "This project ____ was apart of a Level 6 Web and UX formative at Yoobee Colleges in 2019. Click view more to see more about this site",
                 image: ""
             },
             {
                 id: "4",
                 title: "Project Four",
-                details: "weqegiqgwrhwbwhgbwthwrhbw",
+                details: "This project ____ was apart of a Level 6 Web and UX formative at Yoobee Colleges in 2019. Click view more to see more about this site",
                 image: ""
             }
         ]

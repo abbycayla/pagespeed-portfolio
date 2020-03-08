@@ -21,5 +21,14 @@ export default {
 
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Lato, sans-serif;
+}
 
 </style>

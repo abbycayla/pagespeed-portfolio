@@ -1,8 +1,8 @@
 <template>
   <nav>
     <ul>
-        <li> Back </li>
-        <li> Admin Log in </li>
+      <li><router-link v-bind:to="'/'"> back </router-link></li>
+        <li><router-link v-bind:to="'/login'"> Admin Log In </router-link> </li>
     </ul>
   </nav>
 </template>
@@ -16,7 +16,7 @@ export default {
 <style scoped>
   nav {
       width: 100%;
-      background-color: lightgrey;
+      background-color: #FFADB9;
       height: 70px;
       margin-bottom: 70px;
   }
@@ -30,6 +30,13 @@ export default {
   li {
       padding: 22px 0px;
       list-style-type: none;
-      font-size: 1.2em;
+      font-weight: 400;
+      color: white;
+  }
+
+  a {
+      color: white;
+      text-decoration: none;
+
   }
 </style>
