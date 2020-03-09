@@ -5,8 +5,7 @@
     <div class="placeholder-img"></div>
         <h2> {{project.title}}</h2>
         <p> {{project.details}} </p>
-        <button><router-link v-bind:to="'/details'"> View More</router-link></button>
-
+        <button> View More </button>
     </div>
   </div>
   </div>
@@ -63,7 +62,8 @@ data: function(){
 
 .project-item {
     margin: 5% 5%;
-    width: 500px;
+    width: 450px;
+    height: 400px;
     text-align: center;
     
 }
@@ -76,19 +76,16 @@ data: function(){
 
 .placeholder-img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     background-color: lightgrey;
 }
 
 button {
     border: none;
     background-color: white;
+    text-decoration: underline;
     outline: none;
-    padding-top: 30px;
-}
+    }
 
-a {
-    color: #FFADB9;
-}
 
 </style>

@@ -2,7 +2,7 @@
   <nav>
     <ul>
       <li><router-link v-bind:to="'/'"> back </router-link></li>
-        <li> Admin Log in </li>
+        <li><router-link v-bind:to="'/login'"> Admin Log In </router-link> </li>
     </ul>
   </nav>
 </template>
@@ -24,10 +24,11 @@ export default {
   ul {
       display: flex;
       justify-content: space-between;
+      padding: 0px 20px;
   }
 
   li {
-      padding: 22px 50px;
+      padding: 22px 0px;
       list-style-type: none;
       font-weight: 400;
       color: white;
