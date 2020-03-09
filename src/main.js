@@ -9,6 +9,8 @@ import Login from './components/admin/Login.vue';
 import Profile from './components/admin/Profile.vue';
 import Projects from './components/admin/Projects.vue';
 import EditProject from './components/admin/EditProject.vue';
+import AddProject from './components/admin/AddProject.vue';
+
 
 
 
@@ -36,6 +38,9 @@ const routes = [{
 },{
   path: '/edit-project',
   component: EditProject
+},{
+  path: '/add-project',
+  component: AddProject
 }
 ]
 

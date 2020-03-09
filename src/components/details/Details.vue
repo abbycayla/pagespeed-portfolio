@@ -60,15 +60,16 @@ name: "Details"
 }
 
 button {
-    border: none;
-    background-color: white;
-    outline: none;
-    padding-top: 20px;
-}
+  background-color: #FFADB9;
+  border-radius: 20px;
+  border: none; 
+  padding: 10px 20px;
+    }
 
-a {
-    color: #FFADB9;
-    font-size: 1.2em
+    button a {
+  text-decoration: none;
+  color: white;
+
 }
 
 .contact {
