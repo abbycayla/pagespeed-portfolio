@@ -54,22 +54,24 @@ name: "Details"
 }
 
 .details-content div {
-    margin: 5% 7%;
+    margin: 5% 5%;
     width: 500px;
     text-align: center;
 }
 
 button {
     border: none;
-    background-color: white;
+    background-color: #FFADB9;
     outline: none;
-    padding-top: 20px;
-}
+    border-radius: 20px;
+    padding: 10px 20px;
+    }
 
-a {
-    color: #FFADB9;
-    font-size: 1.2em
-}
+    a {
+    text-decoration: none;
+    color: white;
+
+    }
 
 .contact {
     padding-bottom: 40px
