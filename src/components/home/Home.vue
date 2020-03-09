@@ -1,5 +1,6 @@
 <template>
   <div> 
+      <h1> Projects </h1>
       <Projects/>
   </div>
 </template>
@@ -19,6 +20,8 @@ export default {
 
 h1 {
     text-align: center;
+    font-weight: lighter;
 }
+
 
 </style>

@@ -3,7 +3,8 @@
     <h1> Project Name </h1>
   <div class="details-content"> 
       <div>
-          <div class="placeholder-img"></div>
+          <img src="https://i.ibb.co/nwTs0LT/landing.png" alt="landing">  
+
           <button> <a href="https://www.netlify.com/" target="_blank"> View Site Live </a> </button>
       </div>
       <div class="details-con">
@@ -42,20 +43,19 @@ name: "Details"
 
 <style scoped>
 
-.placeholder-img {
-    width: 400px;
-    height: 400px;
-    background-color: lightgrey;
+h1 {
+    text-align: center;
+
 }
 
 .details-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .details-content div {
-    margin: 5% 0%;
-    width: 500px;
+    margin: 5% 5%;
+    /* width: 500px; */
     text-align: center;
 }
 
@@ -73,11 +73,21 @@ button {
 }
 
 .contact {
-    padding-bottom: 40px
+    padding-bottom: 40px;
 }
 
 .contact-links {
     display: flex;
+    justify-content: space-between;
+}
+
+p {
+    width: 100%;
+}
+
+img {
+  width: 90%;
+  /* padding-bottom: 50px; */
 }
 
 .details-con {

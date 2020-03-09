@@ -8,8 +8,8 @@
 
  <div class="projects-list">
   <div v-for="project in projects" :key="project.id" class="project-item">
-    <div class="placeholder-img"></div>
-        <h2> {{project.title}}</h2>
+<img src="https://i.ibb.co/nwTs0LT/landing.png" alt="landing" border="0">  
+       <h2> {{project.title}}</h2>
         <p> {{project.details}} </p>
         <button class="edit-project"><router-link v-bind:to="'/edit-project'">  edit </router-link> </button>
 
@@ -58,28 +58,25 @@ data: function(){
 }
 
 .project-item {
-    margin: 5% 5%;
-    width: 450px;
-    height: 400px;
-    text-align: center;
-    
+ padding: 60px 50px;
+  width: 600px;    
+  text-align: center;
+}
+
+ img {
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 h2 {
   margin: 20px 0px;
 }
 
-.placeholder-img {
-    width: 100%;
-    height: 100%;
-    background-color: lightgrey;
-}
-
 .edit-project {
   background-color: #FFADB9;
   border-radius: 20px;
   border: none; 
-  padding: 10px 20px;
+  padding: 5px 20px;
     }
 
     .edit-project a {
@@ -110,7 +107,6 @@ h2 {
 h1 {
   border-bottom: 1px solid #FFADB9;
   margin-bottom: 30px;
-}
-
+} 
 
 </style>
