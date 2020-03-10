@@ -21,7 +21,8 @@ Vue.use(VueResource);
 
 const routes = [{
   path: '/',
-  component: Landing
+  component: Landing,
+  name: 'landing'
   },{
     path: '/home',
   component: Home
@@ -30,7 +31,8 @@ const routes = [{
   component: Details
 },{
   path: '/login',
-  component: Login
+  component: Login,
+  name: 'login'
 },{
   path: '/profile',
   component: Profile

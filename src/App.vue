@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header v-if="!['landing'].includes($route.name)"/>
     <router-view> </router-view>
-   <Footer/>
+   <Footer v-if="!['landing', 'login'].includes($route.name)"/>
   </div>
 </template>
 
