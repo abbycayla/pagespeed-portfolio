@@ -1,7 +1,14 @@
 <template>
-
-    <div class="projects-list"></div>
-  
+<div>
+<div class="projects-list">
+    <div v-for="project in projects" :key="project.id" class="project-item">
+    <div class="placeholder-img"></div>
+        <h2> {{project.title}}</h2>
+        <p> {{project.details}} </p>
+        <button> View More </button>
+    </div>
+  </div>
+  </div>
 </template>
 
 <script>
@@ -10,25 +17,31 @@ export default {
 name: "Projects",
 data: function(){
     return {
-        project: [
+        projects: [
             {
                 id: "1",
-                title: "",
-                details: "",
+                title: "Project One",
+                details: "This project ____ was apart of a Level 6 Web and UX formative at Yoobee Colleges in 2019. Click view more to see more about this site",
                 image: ""
             },
             {
                 id: "2",
-                title: "",
-                details: "",
+                title: "Project Two",
+                details: "This project ____ was apart of a Level 6 Web and UX formative at Yoobee Colleges in 2019. Click view more to see more about this site",
                 image: ""
             },
             {
                 id: "3",
-                title: "",
-                details: "",
+                title: "Project Three",
+                details: "This project ____ was apart of a Level 6 Web and UX formative at Yoobee Colleges in 2019. Click view more to see more about this site",
                 image: ""
             },
+            {
+                id: "4",
+                title: "Project Four",
+                details: "This project ____ was apart of a Level 6 Web and UX formative at Yoobee Colleges in 2019. Click view more to see more about this site",
+                image: ""
+            }
         ]
     }
 }
@@ -38,6 +51,35 @@ data: function(){
 
 </script>
 
-<style>
+
+
+<style scoped>
+.projects-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    margin: 5% 5%;
+    width: 450px;
+    height: 400px;
+    text-align: center;
+    
+}
+
+.placeholder-img {
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+}
+
+button {
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    outline: none;
+    }
+
 
 </style>
