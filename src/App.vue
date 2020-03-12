@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header v-if="!['landing'].includes($route.name)"/>
+    <Header v-if="!['landing', 'login'].includes($route.name)"/>
     <router-view> </router-view>
    <Footer v-if="!['landing', 'login'].includes($route.name)"/>
   </div>

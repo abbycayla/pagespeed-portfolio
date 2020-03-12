@@ -32,6 +32,7 @@ export default {
       list-style-type: none;
       font-weight: 400;
       color: white;
+      font-family: 'Lato', sans-serif;
   }
 
   a {

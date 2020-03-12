@@ -54,43 +54,86 @@
 
 .users img {
   width: 100%;
+  
 }
 
 .user-1-info {
   text-align: center;
   font-family: 'Lato', sans-serif;
-  position: absolute;
+  /* position: absolute; */
   top: 370px;
-  left: 150px;
+  left: 200px;
 }
 .user-2-info {
   text-align: center;
   font-family: 'Lato', sans-serif;
-   position: absolute;
+   /* position: absolute; */
   top: 370px;
+  left: 830px;
 }
 .user-3-info {
   text-align: center;
   font-family: 'Lato', sans-serif;
-  position: absolute;
+  /* position: absolute; */
   top: 370px;
+   left: 1460px; 
 }
 
 #abby-img {
   border-radius: 250px;
-  width: 200px;
+  width: 300px;
 }
 
 
 
 #amber-img {
   border-radius: 250px;
-  width: 200px;
+  width: 300px;
 }
 
 #liv-img {
  border-radius: 250px;
-  width: 200px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 600px){
+
+.users {
+  display: flex;
+  flex-direction: column;
+ 
+ 
+}
+
+.users img {
+display: none;
+
+
+}
+
+.user-1-info {
+display: flex;
+flex-direction: column;
+ background-color: rgb(255, 190, 115);
+ padding: 42px 0px 42px 0px;
+}
+.user-2-info {
+display: flex;
+flex-direction: column;
+background-color: rgb(255, 241, 115);
+ padding: 42px 0px 42px 0px;
+}
+
+.user-3-info {
+display: flex;
+flex-direction: column;
+background-color: rgb(255, 161, 235);
+ padding: 42px 0px 42px 0px;
+}
+
+
+
+
 }
 
 
