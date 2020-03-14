@@ -29,6 +29,7 @@ export default {
 }
 body {
   font-family: Lato, sans-serif;
+  color: #787272;
 }
 
 </style>

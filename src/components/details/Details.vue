@@ -64,6 +64,7 @@ button {
   border-radius: 20px;
   border: none; 
   padding: 10px 20px;
+  margin-top: 30px;
     }
 
     button a {
@@ -94,5 +95,12 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between
+}
+
+@media screen and (max-width: 600px) {
+ .details-content {
+   flex-direction: column;
+ }
+ 
 }
 </style>
