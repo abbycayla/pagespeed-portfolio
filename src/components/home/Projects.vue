@@ -64,7 +64,7 @@ data: function(){
 
 .project-item {
  padding: 60px 50px;
-  width: 600px;    
+  width: 700px;    
   text-align: center;
 }
 

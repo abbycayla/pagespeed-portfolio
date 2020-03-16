@@ -12,7 +12,6 @@
        <h2> {{project.title}}</h2>
         <p> {{project.details}} </p>
         <button class="edit-project"><router-link v-bind:to="'/edit-project'">  edit </router-link> </button>
-
     </div>
   </div>
   </div>
@@ -59,7 +58,7 @@ data: function(){
 
 .project-item {
  padding: 60px 50px;
-  width: 600px;    
+  width: 700px;    
   text-align: center;
 }
 
@@ -73,15 +72,12 @@ h2 {
 }
 
 .edit-project {
-  background-color: #FFADB9;
-  border-radius: 20px;
   border: none; 
-  padding: 5px 20px;
     }
 
     .edit-project a {
-  text-decoration: none;
-  color: white;
+  text-decoration: underline;
+  color: #FFADB9;
 
 }
 
