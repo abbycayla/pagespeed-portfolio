@@ -5,13 +5,22 @@
       <div>
           <img src="https://i.ibb.co/nwTs0LT/landing.png" alt="landing">  
 
-          <button> <a href="https://www.netlify.com/" target="_blank"> View Site Live </a> </button>
+          <button> <a href="https://blackestateforeductaionalpurposes.netlify.com/" target="_blank"> View Site Live </a> </button>
       </div>
-      <div class="details-con">
+      <div class="details-body">
           <div>
+            <div class="pagespeed-maindata">{{ pageStats.score }}</div>
           <h2> Page Speed </h2>
-          <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fblackestateforeductaionalpurposes.netlify.com%2F" target="_blank"> Score </a>
+          <div id="app">
           </div>
+          <div class="pagespeed">
+          <div>
+            <SearchBar @webPageEntered="findPagespeed"></SearchBar>
+          </div>
+      </div>
+
+    </div>
+          
           <div>
           <p class="details"> This project ____ was apart of a Level 6 Web and UX formative at Yoobee Colleges in 2019.</p>
           </div>
@@ -32,13 +41,45 @@
           </div>
       </div>
   </div>
-
   </div>
+
 </template>
 
 <script>
+import SearchBar from "./SearchBar"
+
 export default {
 name: "Details",
+components: {
+    SearchBar
+  },
+  data() {
+    return {
+      pageStats: [
+        {
+          score: 98,
+        }
+      ],
+       isHidden: false
+    };
+  },
+  methods: {
+    findPagespeed(searchTerm) {
+      let query = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${searchTerm}`;
+
+      fetch(query)
+        .then(response => response.json())
+        .then(json => {
+          let rawScore = json.lighthouseResult.categories["performance"].score;
+          let mainScore = (rawScore * 100).toFixed(0);
+          this.pageStats = {
+            score: mainScore,
+          }; 
+          console.log(json)
+        });
+    },
+  }
+  
 };
 
 
@@ -96,7 +137,7 @@ img {
   /* padding-bottom: 50px; */
 }
 
-.details-con {
+.details-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between
@@ -107,9 +148,7 @@ img {
     font-size: 1.6vw;
     font-weight: 500;
     font-family: "Raleway", sans-serif;
-  }
-
-
+ }
 
 
 /* Absolute Center Spinner */
@@ -233,12 +272,9 @@ img {
   }
 }
 
-.pagespeed-mainscore {
-     font-size: 1.6vw;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    padding: 2.2em 0 0 2.3em;
-    margin: 0 0 0 2em;
-    color: #2dbe60;
+.pagespeed-maindata {
+     font-size: 2em;
+    padding: 20px;
+    border:pink 1px solid;
   }
 </style>
