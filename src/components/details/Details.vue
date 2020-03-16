@@ -69,6 +69,7 @@ button {
   border-radius: 20px;
   border: none; 
   padding: 10px 20px;
+  margin-top: 30px;
     }
 
     button a {
