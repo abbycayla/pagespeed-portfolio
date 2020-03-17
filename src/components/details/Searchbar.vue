@@ -1,6 +1,9 @@
 <template>
   <div>
-    <input  type="text" name="username" :value="user.site" @click="onInput">
+
+    <button :value="user.site" @click=" onInput "> Click </button>
+    <button @click="isHidden = true"> hide </button>
+    <p v-if="!isHidden"> hide me </p> 
   </div>
 </template>
 ​
@@ -11,13 +14,18 @@ export default {
     return{
       user:{
         site:'https://blackestateforeductaionalpurposes.netlify.com/'
-      }
+      },
+    isHidden: false
+
     }
   },
   methods: {
     onInput(event) {
       this.$emit('webPageEntered', event.target.value);
-    }
+    },
+    // test(){
+    //   console.log('ok')
+    // }
   }
 };
 </script>

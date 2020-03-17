@@ -8,7 +8,7 @@
           <button> <a href="https://blackestateforeductaionalpurposes.netlify.com/" target="_blank"> View Site Live </a> </button>
       </div>
       <div class="details-body">
-          <div>
+          <div class="pagespeed-content">
             <div class="pagespeed-maindata">{{ pageStats.score }}</div>
           <h2> Page Speed </h2>
           <div id="app">
@@ -60,7 +60,6 @@ components: {
           score: 98,
         }
       ],
-       isHidden: false
     };
   },
   methods: {
@@ -77,7 +76,7 @@ components: {
           }; 
           console.log(json)
         });
-    },
+    }
   }
   
 };
@@ -153,7 +152,7 @@ img {
 
 /* Absolute Center Spinner */
 .loading {
-  display: none;
+  /* display: none; */
   /* position: fixed; */
   z-index: 999;
   height: 2em;
