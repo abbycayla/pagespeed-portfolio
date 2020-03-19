@@ -20,8 +20,8 @@
    <div>
    <img id="liv-img" src="https://i.ibb.co/NyMFbhk/liv.png" alt="liv" border="0">
    </div>
- <div>
- <button>Change</button>
+ <div class="profile-change">
+ <button>Change avatar</button>
  </div>
    
   </div>
@@ -66,6 +66,27 @@ name: "Profile"
 </script>
 
 <style scoped>
+.profile-change button {
+    font-family: 'Lato', sans-serif;
+  font-size: 15px;
+border: none;
+background-color:rgba(255, 173, 185, 0.719) ;
+border-radius: 15px;
+padding: 5px 10px 5px 10px;
+}
+
+.profile-change button:hover {
+  cursor: pointer;
+  background-color:rgb(209, 111, 126) ;
+  color: white;
+}
+
+.profile-change {
+  padding: 20px 0px 0px 0px;
+}
+
+
+
 .profile-form p {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
@@ -119,10 +140,13 @@ flex-direction: column;
   background-color: #FFADB9;
 }
 
+#profile-select {
+  background-color: white;
+}
+
 #profile-select:hover {
  cursor: pointer;
   background-color: rgb(209, 111, 126);
-  
   border-color: rgb(209, 111, 126);
 }
 
@@ -171,7 +195,7 @@ margin-bottom: 50px;
 
 
 .profile-CV button {
- background-color: #FFADB9;
+ background-color: rgba(255, 173, 185, 0.719);
  border: none;
  border-radius: 10px;
  padding:12.5px 25px 12.5px 25px;
@@ -209,6 +233,32 @@ margin-bottom: 50px;
  cursor: pointer;
   background-color: rgb(209, 111, 126);
   
+}
+
+@media only screen and (max-width: 600px){
+
+.profile-title {
+border-bottom:1px solid #FFADB9; 
+width:315px; 
+padding-bottom:5px;
+margin-left: 20px;
+padding-top: 100px;
+margin-bottom: 50px;
+  }
+
+  .profile-form {
+padding: 100px 20px 20px 20px;
+}
+
+.profile-form input {
+ padding:10px 180px 25px 10px;
+
+}
+
+#profile-bio {
+  padding:10px 180px 150px 10px;
+}
+
 }
 
 

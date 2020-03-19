@@ -24,6 +24,10 @@ name: "EditProject"
 #profile-selected {
   background-color: #FFADB9;
 }
+#profile-select {
+  background-color: white;
+}
+
 
 #profile-select:hover {
  cursor: pointer;
