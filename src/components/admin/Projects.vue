@@ -1,5 +1,5 @@
 <template>
-
+  <div>
    <div class="profile-link"> 
      
       <button id="profile-select"> <router-link v-bind:to="'/profile'">  Profile </router-link>  </button>
@@ -25,7 +25,7 @@
     </div>
   </div>
   </div>
-
+</div>
 </template>
 
 <script>

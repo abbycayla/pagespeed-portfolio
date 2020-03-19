@@ -9,7 +9,7 @@
 ​
 <script>
 export default {
-  name: 'SearchBar',
+  name: 'PageSpeed',
   data(){
     return{
       user:{

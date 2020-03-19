@@ -15,7 +15,7 @@
           </div>
           <div class="pagespeed">
           <div>
-            <SearchBar @webPageEntered="findPagespeed"></SearchBar>
+            <PageSpeed @webPageEntered="findPagespeed"></PageSpeed>
           </div>
       </div>
 
@@ -46,12 +46,12 @@
 </template>
 
 <script>
-import SearchBar from "./SearchBar"
+import PageSpeed from "./PageSpeed"
 
 export default {
 name: "Details",
 components: {
-    SearchBar
+    PageSpeed
   },
   data() {
     return {
