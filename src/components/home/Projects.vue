@@ -2,10 +2,12 @@
 <div>
 <div class="projects-list">
     <div v-for="project in projects" :key="project.id" class="project-item">
-    <div class="placeholder-img"></div>
-        <h2> {{project.title}}</h2>
+<img src="https://i.ibb.co/nwTs0LT/landing.png" alt="landing">  
+<!-- <div class="project-details"> -->
+<h2> {{project.title}}</h2>
         <p> {{project.details}} </p>
-        <button> View More </button>
+        <button> <router-link v-bind:to="'/details'"> View More </router-link> </button>
+        <!-- </div> -->
     </div>
   </div>
   </div>
@@ -61,25 +63,32 @@ data: function(){
 }
 
 .project-item {
-    margin: 5% 5%;
-    width: 450px;
-    height: 400px;
-    text-align: center;
-    
+ padding: 60px 50px;
+  width: 700px;    
+  text-align: center;
 }
 
-.placeholder-img {
-    width: 100%;
-    height: 100%;
-    background-color: lightgrey;
+ img {
+  width: 100%;
+  padding-bottom: 20px;
 }
+
+p {
+    margin: 20px 0px;
+} 
+
 
 button {
-    border: none;
-    background-color: white;
-    text-decoration: underline;
-    outline: none;
+  background-color: #FFADB9;
+  border-radius: 20px;
+  border: none; 
+  padding: 5px 20px;
     }
 
+button a {
+  text-decoration: none;
+  color: white;
+
+}
 
 </style>

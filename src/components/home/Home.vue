@@ -1,5 +1,6 @@
 <template>
   <div> 
+      <h1> Projects </h1>
       <Projects/>
   </div>
 </template>
@@ -15,10 +16,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 h1 {
     text-align: center;
+    font-weight: lighter;
 }
+
 
 </style>

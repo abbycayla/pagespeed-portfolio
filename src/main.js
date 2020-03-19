@@ -10,6 +10,8 @@ import Login from './components/admin/Login.vue';
 import Profile from './components/admin/Profile.vue';
 import Projects from './components/admin/Projects.vue';
 import EditProject from './components/admin/EditProject.vue';
+import AddProject from './components/admin/AddProject.vue';
+
 
 
 
@@ -20,11 +22,12 @@ Vue.use(VueResource);
 
 
 const routes = [{
+
   path: '/',
   component: Landing,
   name: 'landing'
   },{
-    path: '/home',
+  path: '/home',
   component: Home
 },{
   path: '/details',
@@ -42,6 +45,9 @@ const routes = [{
 },{
   path: '/edit-project',
   component: EditProject
+},{
+  path: '/add-project',
+  component: AddProject
 }
 ]
 
