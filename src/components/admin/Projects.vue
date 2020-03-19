@@ -1,4 +1,14 @@
 <template>
+
+   <div class="profile-link"> 
+     
+      <button id="profile-select"> <router-link v-bind:to="'/profile'">  Profile </router-link>  </button>
+      <button id="profile-selected">
+ Projects
+      </button>
+   
+</div>
+
   <div> 
       <h1> Projects  </h1>
       <div class="align-project">
@@ -15,6 +25,7 @@
     </div>
   </div>
   </div>
+
 </template>
 
 <script>
@@ -50,6 +61,49 @@ data: function(){
 </script>
 
 <style scoped>
+
+.profile-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+#profile-selected {
+  background-color: #FFADB9;
+}
+#profile-select {
+  background-color: white;
+}
+
+
+#profile-select:hover {
+ cursor: pointer;
+  background-color: rgb(209, 111, 126);
+  color: white;
+  border-color: rgb(209, 111, 126);
+}
+
+
+
+.profile-link button {
+  margin: 0%;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  border-color: #FFADB9;
+ border-width: 1px;
+ border-style: solid;
+ border-radius: 20px;
+ padding: 10px 20px 10px 20px;
+ 
+
+}
+
+.profile-link a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 30px;
+}
+
 .projects-list{
     display: flex;
     justify-content: center;
@@ -104,5 +158,6 @@ h1 {
   border-bottom: 1px solid #FFADB9;
   margin-bottom: 30px;
 } 
+
 
 </style>
