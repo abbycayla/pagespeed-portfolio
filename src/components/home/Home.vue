@@ -1,5 +1,6 @@
 <template>
   <div> 
+      <Details/>
       <h1> Projects </h1>
       <Projects/>
   </div>
@@ -7,11 +8,14 @@
 
 <script>
 import Projects from "./Projects"
+import Details from "./Details"
+
 export default {
 
     name: "Home",
     components:{
-        Projects
+        Projects,
+        Details
     }
 }
 </script>
