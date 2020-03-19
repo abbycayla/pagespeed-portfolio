@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
 
+import Landing from './components/landing/Landing.vue';
 import Home from './components/home/Home.vue';
 import Details from './components/details/Details.vue';
 import Login from './components/admin/Login.vue';
@@ -21,6 +22,11 @@ Vue.use(VueResource);
 
 
 const routes = [{
+
+  path: '/',
+  component: Landing,
+  name: 'landing'
+  },{
   path: '/home',
   component: Home
 },{
@@ -28,7 +34,8 @@ const routes = [{
   component: Details
 },{
   path: '/login',
-  component: Login
+  component: Login,
+  name: 'login'
 },{
   path: '/profile',
   component: Profile

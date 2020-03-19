@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header v-if="!['landing', 'login'].includes($route.name)"/>
     <router-view> </router-view>
-    <Footer/>
+   <Footer v-if="!['landing', 'login'].includes($route.name)"/>
   </div>
 </template>
 
@@ -20,6 +20,8 @@ export default {
 </script>
 
 
+
+
 <style>
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&display=swap');
 * {
@@ -29,7 +31,8 @@ export default {
 }
 body {
   font-family: Lato, sans-serif;
-  
+  color: #787272;
 }
 
 </style>
+
