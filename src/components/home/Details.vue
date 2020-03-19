@@ -8,16 +8,19 @@
           </div>
           </div>
       <h1>{{details.name}}</h1>
-      <p>{{details.info}}</p>
+      <p class="Details-info">{{details.info}}</p>
       <div class="icons">
         <div>
       <img src="https://i.ibb.co/J2GKfkm/instagram-1.png" alt="instagram-1">
+      <p>Instagram</p>
       </div>
       <div>
       <img src="https://i.ibb.co/7p7Vp89/email-icon.png" alt="email-icon">
+      <p>Email</p>
       </div>
       <div>
-      <img src="https://i.ibb.co/HxB602L/CV-icon.png" alt="CV-icon">
+      <img src="https://i.ibb.co/GpmGs89/pink-cv.png" alt="pink-cv">
+      <p>Cv</p>
       </div>
       </div>
   </div>
@@ -47,7 +50,6 @@ export default {
 .details-item{
     margin: 0px 20%;
     padding-bottom: 40px;
-    /* width: 70%; */
     justify-content: center;
 }
 
@@ -69,14 +71,16 @@ h1 {
     justify-content: center;
     font-size: 2.5em;
     padding-top: 70px;
+    color: #908787;
 }
 
 
-p{
+.Details-info{
     padding-top: 70px;
     padding-bottom: 80px;
     font-size: 1em;
-    text-align: center;
+    color: #908787;
+     
 }
 
 .icons {
@@ -87,10 +91,16 @@ p{
 }
 
 .icons img {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 50%;
     
+}
+
+p {
+    font-size: 1em;
+     color: #908787;
+     padding-bottom: 20px;
 }
  .bg-color {
      background-color: #ffadb9;
