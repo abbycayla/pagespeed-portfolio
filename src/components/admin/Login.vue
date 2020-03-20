@@ -111,12 +111,13 @@ name: "Login",
 }
 .login-content {
    background-image: linear-gradient(to right, rgba(255, 192, 124, 0.5) , rgba(255, 215, 96, 0.5) , rgba(255, 173, 185, 0.5));
-   padding: 150px 440px 150px 440px;
+   padding: 300px 600px 300px 600px;
 }
 
 .login-content h1{
   font-family: 'Lato', sans-serif;
   margin-bottom: 50px;
+  text-align: center;
  }
 
 
@@ -124,7 +125,7 @@ name: "Login",
 input[type=text] {
  border: none;
 background-color: rgb(197, 197, 197);
-padding: 20px 305px 20px 15px;
+padding: 20px 460px 20px 15px;
  outline: none;
  border-radius: 5px;
 }

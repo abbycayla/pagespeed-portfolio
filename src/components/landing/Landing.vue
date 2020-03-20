@@ -87,7 +87,7 @@
 }
 
 .hidden img {
-  width: 220px;
+  width: 300px;
   
 }
 
@@ -99,7 +99,7 @@
 
   background-image: url("https://i.ibb.co/nbhWGSH/abby-designs.jpg");
   background-size: 100%;
-   padding: 270px 137px 225px 137px;
+   padding: 300px 170px 300px 170px;
  
 }
 .user-2-info {
@@ -107,7 +107,9 @@
   font-family: 'Lato', sans-serif;
   background-image: url("https://i.ibb.co/rGFH6D8/amber-designs.jpg");
   background-size: 100%;
-  padding: 270px 137px 225px 137px;
+      padding: 300px 200px 300px 137px;
+ 
+ 
 }
 .user-3-info {
   text-align: center;
@@ -115,12 +117,12 @@
 
    background-image: url("https://i.ibb.co/K5mGS87/livs-designs.jpg" );
   background-size: 100%;
-  padding: 270px 137px 225px 137px;
+     padding: 300px 200px 300px 137px;
 }
 
 #abby-img {
   border-radius: 250px;
-  width: 200px;
+  width: 300px;
 }
 
 
@@ -129,12 +131,12 @@
 
 #amber-img {
   border-radius: 250px;
-  width: 200px;
+  width: 300px;
 }
 
 #liv-img {
  border-radius: 250px;
-  width: 200px;
+  width: 300px;
 }
 
 @media only screen and (max-width: 600px){
