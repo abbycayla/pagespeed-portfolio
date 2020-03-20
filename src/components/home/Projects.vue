@@ -46,6 +46,17 @@ data: function(){
             }
         ]
     }
+},
+ createProject: function() {
+      return axios
+        .post(`${config.apiUrl}/projects`, this.project)
+        .then(() => {
+          this.$router.push({ path: "/" });
+        })
+        .catch(function(error) {
+          // handle error
+          console.log(error);
+        });
 }
 }
 

@@ -35,7 +35,6 @@ export default {
     width: 100%;
     font-size: 1.6vw;
     font-weight: 500;
-    font-family: "Raleway", sans-serif;
     outline: none;
   }
   div {
